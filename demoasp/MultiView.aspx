@@ -31,8 +31,8 @@
                     </p>
                     <p>
                         Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="TextBox5" ErrorMessage="Age must be above 18" ForeColor="Red" MaximumValue="60" MinimumValue="18"></asp:RangeValidator>
+                        <asp:TextBox ID="Agetext" runat="server"></asp:TextBox>
+                        <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="Agetext" ErrorMessage="Above 18" ForeColor="Red" MaximumValue="60" MinimumValue="18" Type="Integer"></asp:RangeValidator>
                         &nbsp;&nbsp;&nbsp;&nbsp;
                         </p>
                     <p>
@@ -41,7 +41,7 @@
                     </p>
                     <p>
                         Confirm Passsword:&nbsp;
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="TextBox7" runat="server" TextMode="Password"></asp:TextBox>
                         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox6" ControlToValidate="TextBox7" ErrorMessage="Enter same as above" ForeColor="Red"></asp:CompareValidator>
                     </p>
                     <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Next" />

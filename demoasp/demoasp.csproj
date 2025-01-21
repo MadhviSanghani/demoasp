@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="addition.aspx" />
     <Content Include="calculator.aspx" />
+    <Content Include="database_demo.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="MultiView.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +89,13 @@
     </Compile>
     <Compile Include="calculator.aspx.designer.cs">
       <DependentUpon>calculator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="database_demo.aspx.cs">
+      <DependentUpon>database_demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="database_demo.aspx.designer.cs">
+      <DependentUpon>database_demo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
